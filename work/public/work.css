@@ -1,0 +1,455 @@
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 6px;
+}
+*::-webkit-scrollbar-track {
+    background: var(--scroll-bg);
+}
+*::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-color);
+    border-radius: 20px;
+}
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scroll-color);
+}
+.awesomplete .input-with-feedback {
+    border: 1px solid var(--border-color);
+}
+.form-control {
+    border: 1px solid var(--border-color);
+}
+.search-bar .awesomplete input {
+    background-color: var(--control-bg)
+}
+.modal-backdrop{
+    background-color: #1a8a92 !important;
+}
+.widget .widget-head .widget-title {
+    font-size: var(--text-base);
+}
+.comment-box .comment-input-header, .form-dashboard-section .section-head, .form-section .section-head, .head-title {
+    font-size: var(--text-base);
+    font-weight: 600;
+}
+.comment-box .comment-input-container .ql-editor {
+    border: 1px solid var(--border-color);
+}
+.duration-picker .duration-input {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+}
+.control-label {
+    font-weight: 500;
+}
+[data-theme="dark"] {
+    /* --bg-color: var(--gray-900);
+    --disabled-control-bg: var(--gray-900); */
+    --bg-color: var(#dde2ea);
+    --disabled-control-bg: var(#dde2ea);
+    --border-color: #f2f5fa;
+    --margin-lg : 15px;
+    --text-bold: 600;
+    --scroll-bg: #f2f5fa;
+    --scroll-color: #0b5cdd;
+}
+
+[data-theme="light"] {
+    --bg-color:#fff;
+    --text-bold: 600;
+    --control-bg : #dde2ea;
+    --control-bg-on-gray: #d4dcea;
+    --disabled-control-bg: #f2f5fa;
+    --heading-color: #fff;
+    --border-color:#003366;
+    --avatar-frame-bg: #dde2ea;
+    --margin-lg: 15px;
+    --sidebar-select-color: #d4dcea;
+    --awesomplete-hover-bg: #d4dcea;
+    --scroll-bg:#f2f5fa;
+    --scroll-color: #d9dfe6;
+}
+
+
+/*****  OVERRIDDEN CSS  *****/
+
+/* Heading Text Color */
+/*
+.page-head{
+    background: #7C7BAD !important;
+    background: #7C7BAD !important;
+}
+.page-container{
+    background: url(/web_responsive/static/src/css/../img/home-menu-bg-overlay.svg), linear-gradient(to bottom, #7C7BAD, #c3c2cc); !important;
+    background-color: url(/web_responsive/static/src/css/../img/home-menu-bg-overlay.svg), linear-gradient(to bottom, #7C7BAD, #c3c2cc); !important;
+}
+h3.ellipsis.title-text,
+.widget-group .widget-group-head .widget-group-title,
+.layout-side-section .sidebar-label{
+    color: white !important;
+}
+
+*/
+/* Form Input Focus *//*
+
+input:focus{
+    border: 1px solid #7C7BAD !important;
+}
+.form-control:focus{
+    box-shadow: 0 0 0 2px rgba(94, 108, 162, 0.25) !important;
+}
+
+*/
+/* Div Padding *//*
+
+.widget.widget-shadow.shortcut-widget-box{
+    padding: 5px 10px;
+}
+
+*/
+/* List Design *//*
+
+.indicator-pill, .indicator-pill-right{
+    padding: 7px 8px;
+    height: unset;
+}
+
+*/
+/* Collapse Div Padding *//*
+
+.section-head.collapsed{
+    padding: 2px 4px;
+}
+
+*/
+/* Dropdown List Hover *//*
+
+.awesomplete > ul > li:hover, .awesomplete > ul > li[aria-selected="true"]{
+    background-color: #a492bf;
+}*/
+.col-lg-2.layout-side-section {
+    background-color: #003366;
+}
+:root {
+    --background-color: #003366;
+}
+
+.page-head.flex {
+    background-color: var(--background-color);
+}
+.modal-title {
+    color: red !important; /* Change to your desired color */
+}
+/* Custom CSS for container-fluid, page-body, and pl-3 classes */
+.container-fluid {
+    max-width: 100%;  /* Example: sets the container width to full */
+    padding: 0;    /* Example: add padding inside the container */
+    background-color: #f8f9fa;  /* Example: light background color */
+}
+
+.page-body {
+    padding: 0;  /* Example: adjusts padding inside page body */
+    background-color: #ffffff;  /* Example: white background */
+    color: #333;    /* Example: text color */
+    border-radius: 5px;  /* Example: rounded corners */
+}
+
+.pl-3 {
+    padding-left: 1rem !important;  /* Example: applies padding on the left */
+}
+
+/* Custom CSS for container-fluid, page-body, and pl-3 classes */
+
+.container,
+.container-fluid,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;  
+  padding-left: 1rem !important;  /* Apply the 1rem left padding */
+  /* padding-right: 1rem !important;  */
+  /* margin-right: inherit !important; */
+  margin-left: inherit !important;
+}
+.page-head {
+    z-index: 6;
+    position: sticky;
+    top: var(--navbar-height);
+    background: var(--bg-color);
+    margin-bottom:0px !important;
+    transition: 0.5s top;
+  }
+
+
+
+
+.layout-main-section { margin-top: 10px !important; }
+
+
+
+
+
+/* Global CSS */
+
+/* Colours */
+:root {
+    --background-color: #003366;
+    --primary-color:#2b38ee;
+    --secondary-color: #2b38ee;
+    --white-color: #141414;;
+    --navbar-white-color: #ffffff;
+    --black-color: #141414;
+    --gray-color:#fff;
+    --page-head-height: 50px;
+    --navbar-height: 50px;
+}
+.btn-primary:active,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary:focus{
+    box-shadow: none !important;
+}
+.btn-primary{
+    color: #fff !important;
+    background-color: var(--primary-color) !important;
+    border-radius: 0 !important;
+}
+.btn-primary:hover{
+    background-color: rgba(239, 238, 245, 0.93) !important;
+}
+/* .btn-secondary{
+    background-color: #606060 !important;
+    color: var(--white-color) !important;
+    border-radius: 0 !important;
+    transition: background-color ease-in-out .15s;
+}
+.btn-secondary:hover{
+    background-color: rgba(255, 120, 10, 0.93) !important;
+} */
+.page-head,
+.page-head .page-head-content{
+    height: var(--page-head-height);
+}
+.page-head,
+.page-head .page-head-content{
+    top: var(--page-head-height);
+}
+
+
+
+/* Top Header */
+
+/* Customization*/
+.page-head-content{
+    /* display: flex;
+    flex-direction: row; */
+    background: var(--background-color) !important;
+    /* height: var(--navbar-height); */
+}
+/* Customization*/
+
+.navbar{
+    background: var(--background-color) !important;
+    height: var(--navbar-height);
+}
+.navbar-expand{
+    background-color: var(--background-color);
+}
+#navbar-breadcrumbs > li > a::before{
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    margin-right: .3em;
+    display: inline-block;
+
+    font-size: 24px;
+    transition: 0.2s;
+    position: relative;
+    top: 3px;
+    content: "\f105";
+    margin-right: 10px;
+    color: var(--navbar-white-color);
+}
+#navbar-breadcrumbs a{
+    color: var(--navbar-white-color);
+    text-decoration: none;
+}
+header .form-control{
+    color: var(--navbar-white-color);
+}
+header .form-control:focus{
+    border: 0;
+}
+.search-bar .awesomplete input{
+    height: 32px;
+}
+/*#navbar-search{
+    width: 300px;
+    background-color: rgb(65, 78, 90);
+    border-radius: 0px;
+    color: #f9f9f9;
+    border: none;
+}*/
+/* header ul#navbar-breadcrumbs{
+    margin-top: -8px;
+} */
+header .form-control:focus{
+    background-color: var(--navbar-white-color) !important;
+}
+
+
+
+
+
+/* Sidebar */
+/* custom Script */
+/* Sidebar */
+.layout-side-section .sidebar-label {
+    color: var(--navbar-white-color);  /* Changes the text color to white */
+    font-size: 18px;  /* Increases the font size */
+    font-weight: bold;  /* Optional: Makes the text bold */
+}
+
+.sidebar-label svg,
+.layout-side-section .sidebar-label .icon {
+    stroke: var(--navbar-white-color);  /* Changes the icon color to white */
+}
+
+/*  */
+.layout-side-section .sidebar-label{
+    color: var(--navbar-white-color);
+}
+.sidebar-label svg,
+.layout-side-section .sidebar-label .icon{
+    stroke: var(--navbar-white-color);
+}
+/* customization */
+.app-logo{
+    max-height: 45px !important;
+    max-width: auto !important;
+}
+.es-icon.es-line.icon-xs {
+    stroke:green; /* Change the stroke color */
+    fill: #fff; /* Change the fill color */
+    color: #fff;
+    width: 24px; /* Set the width */
+    height: 24px; /* Set the height */
+}
+.btn-reset.standard-sidebar-label {
+    stroke: #fff; /* Change the stroke color */
+    fill: #fff; /* Change the fill color */
+    color: #fff;
+    width: 24px; /* Set the width */
+    height: 24px; /* Set the height */    
+    
+}
+.icon.icon-md {
+    fill: #fff; /* Changes the interior color to white */
+    stroke: #fff; /* Changes the outline color to white */
+}
+.sidebar-toggle-placeholder use {
+    fill: white !important;
+    stroke: #fff !important; /* Use !important to override inline or default styles */
+}
+.sidebar-item-label {
+    color: white !important;
+}
+
+
+/* customization */
+.list-sidebar-button{
+    background-color: var(--navbar-white-color) !important;
+    box-shadow: none !important;
+}
+.list-sidebar-button:active,
+.list-sidebar-button:focus{
+    text-decoration: none !important;
+    box-shadow: none !important;
+}
+
+
+/* Input Fields */
+input{
+    border-radius: 0 !important;
+}
+.form-control{
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    background-color: #f2f2f2 !important;
+}
+.form-control:focus{
+    outline: 0;
+    border: 1px solid var(--primary-color);
+    box-shadow: none;
+    background: rgba(139, 116, 89, 0.14) !important;
+}
+.navbar .navbar-nav a.nav-link{
+    color: var(--white-color);
+}
+span.notifications-seen use,
+symbol#icon-small-down{
+    fill: var(--white-color);
+}
+
+
+/* Table */
+.form-grid{
+    border-radius: 0;
+    border: 1px solid #003366;
+}
+.form-grid .grid-heading-row{
+    background-color: #f4f4f4;
+}
+.grid-heading-row{
+    border-bottom: 1px solid var(--primary-color);
+}
+.grid-row > .row .col{
+    border-right: 1px solid #d1d8dd;
+}
+.form-grid .grid-row:hover{
+    background: black !important;
+}
+
+/* Heading Color */
+.head-title, .form-section .section-head, .form-dashboard-section .section-head, .comment-box .comment-input-header{
+    color: var(--white-color);
+}
+
+/* Lists */
+.list-subject a{
+    text-decoration: none;
+    transition: 0.3s;
+}
+.list-subject a:hover{
+    color: var(--secondary-color);
+}
+
+
+/* Report Table */
+.datatable .dt-header .dt-cell--header .dt-cell__content{
+    background-color: #f4f4f4;
+}
+
+
+/* Buttons CSS
+.filter-button,
+.sort-selector-button,
+.btn-order{
+    background-color: #ea7272 !important;
+    color: var(--white-color) !important;
+    transition: 0.3s;
+    border-radius: 0 !important;
+}
+.filter-button:hover,
+.sort-selector-button:hover,
+.btn-order:hover{
+    background-color: #c83b3b !important;
+}
+.filter-button span.filter-icon{
+    color: var(--white-color);
+}
+.filter-button span.filter-icon svg.icon{
+    stroke: var(--white-color);
+} */
